@@ -1,0 +1,80 @@
+﻿<Window x:Class="IVO.LiftSysteem.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="IVO Lift" Height="296" Width="524" Loaded="Window_Loaded">
+    <DockPanel>
+        <GroupBox DockPanel.Dock="Bottom" Height="100">
+            <GroupBox.Header>
+                <Label>Debug boodschappen (lift)</Label>
+            </GroupBox.Header>
+            <GroupBox.Content>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label>Wachtrij :</Label>
+                        <Label x:Name="lblWachtrij"></Label>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label>Status :</Label>
+                        <Label x:Name="lblStatus"></Label>
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox.Content>
+        </GroupBox>
+        <GroupBox DockPanel.Dock="Left" Width="289" Margin="0,0,0,18">
+            <GroupBox.Header>
+                <Label>Buitenbediening</Label>
+            </GroupBox.Header>
+            <GroupBox.Content>
+                <Grid>
+                    <Image Margin="10,0,212,0" Source="Resources/elevator.png"/>
+                    <StackPanel Margin="70,0,10,0">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Verdieping 2" Width="100"></Label>
+                            <Button CommandParameter="2#DOWN" Content="&#9660;" Width="40" Margin="46,2,2,2" Click="btnBuitenBediening_Click" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Verdieping 1" Width="100"></Label>
+                            <Button CommandParameter="1#UP" Content="&#9650;" Width="40" Margin="2,2,2,2" Click="btnBuitenBediening_Click" />
+                            <Button CommandParameter="1#DOWN" Content="&#9660;" Width="40" Margin="2,2,2,2" Click="btnBuitenBediening_Click" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Verdieping 0" Width="100"></Label>
+                            <Button CommandParameter="0#UP" Content="&#9650;" Width="40" Margin="2,2,2,2" Click="btnBuitenBediening_Click" />
+                            <Button CommandParameter="0#DOWN" Content="&#9660;" Width="40" Margin="2,2,2,2" Click="btnBuitenBediening_Click" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Verdieping -1" Width="100"></Label>
+                            <Button CommandParameter="-1#UP"  Content="&#9650;" Width="40" Margin="2,2,2,2" Click="btnBuitenBediening_Click" />
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </GroupBox.Content>
+        </GroupBox>
+        <GroupBox Width="214" Margin="0,0,0,18">
+            <GroupBox.Header>
+                <Label>Binnenbediening</Label>
+            </GroupBox.Header>
+            <GroupBox.Content>
+                <DockPanel>
+                    <WrapPanel Width="48" DockPanel.Dock="Left" Margin="0,5,0,0">
+                        <Button Content="2" Width="40" Margin="2,2,2,2" Click="btnBinnenBediening_Click" />
+                        <Button Content="1" Width="40" Margin="2,2,2,2" Click="btnBinnenBediening_Click" />
+                        <Button Content="0" Width="40" Margin="2,2,2,2" Click="btnBinnenBediening_Click" />
+                        <Button Content="-1" Width="40" Margin="2,2,2,2" Click="btnBinnenBediening_Click" />
+                    </WrapPanel>
+                    <Border BorderBrush="#FF615F5F" BorderThickness="2.0" Margin="5,5,5,0">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="1"/>
+                                <GradientStop Color="#FF6A6A6A" Offset="0.126"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Grid>
+                            <TextBlock x:Name="tbVerdiep" Foreground="#FFC4CB3A" FontFamily="Consolas" Text="1" FontSize="72" Padding="20,0,20,0"></TextBlock>
+                        </Grid>
+                    </Border>
+                </DockPanel>
+            </GroupBox.Content>
+        </GroupBox>
+    </DockPanel>
+</Window>

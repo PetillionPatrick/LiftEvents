@@ -1,0 +1,13 @@
+﻿
+
+Ik heb gekozen voor een prioriteit gebonden scheduling.
+	-	Ik heb voor deze gekozen omdat ik dan zelf kon instellen welke gekozen verdiepen voorrang kregen op andere verdiepen. Zo heb ik een veel sneller proces en zijn de wachttijden minder lang.
+
+First in first out 
+Deze heb ik niet gekozen omdat het langdurige processen met zich mee kan brengen. Iedereen komt wel aan de beurt maar de wachttijden kunnen langer zijn.
+
+Round Robin
+Deze vind ik niet toepasbaar op een lift aangezien een lift een logische volgorde kan krijgen en niet moet gecombineerd worden met maximale tijden.
+
+Multilevel Queque
+Heb ik niet gebruikt omdat de hoofd queque regelmatig moet aangepast worden. Aangezien de processen hun queque moeten voltooien alvorens ze kunnen wisselen kan dit niet gebruikt worden.

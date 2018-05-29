@@ -1,0 +1,5 @@
+D:\IVO\A11\# Opdrachten PE\Labo - Liftsysteem\IVO.LiftSysteem.API\IVO.LiftSysteem.Lib\bin\Debug\IVO.LiftSysteem.Lib.dll
+D:\IVO\A11\# Opdrachten PE\Labo - Liftsysteem\IVO.LiftSysteem.API\IVO.LiftSysteem.Lib\bin\Debug\IVO.LiftSysteem.Lib.pdb
+D:\IVO\A11\# Opdrachten PE\Labo - Liftsysteem\IVO.LiftSysteem.API\IVO.LiftSysteem.Lib\obj\Debug\IVO.LiftSysteem.Lib.csprojResolveAssemblyReference.cache
+D:\IVO\A11\# Opdrachten PE\Labo - Liftsysteem\IVO.LiftSysteem.API\IVO.LiftSysteem.Lib\obj\Debug\IVO.LiftSysteem.Lib.dll
+D:\IVO\A11\# Opdrachten PE\Labo - Liftsysteem\IVO.LiftSysteem.API\IVO.LiftSysteem.Lib\obj\Debug\IVO.LiftSysteem.Lib.pdb
